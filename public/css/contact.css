@@ -1,0 +1,178 @@
+#details .loc-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#details .locdetails {
+    width: 50%;
+}
+
+#details h2 {
+    font-size: 24px;
+    color: rgb(85, 76, 76);
+}
+
+#details h3 {
+    padding-top: 20px;
+}
+
+#details .loc-details li i {
+    padding-top: 20px;
+    padding-left: 20px;
+    margin: 0;
+}
+
+
+#details .loc-details li p {
+    padding-top: 20px;
+    padding-left: 20px;
+    margin: 0;
+}
+
+#details .loc-details li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-right: 20px;
+} 
+
+#details .google-map {
+    width: 50%;
+}
+
+#form {
+    max-height: 100%;
+}
+
+#form .det-box {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    width: 100%;
+}
+
+#form .client-form {
+    width: 70%;
+}
+
+#form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#form form input {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    outline: none;
+    border: 2px solid rgb(207, 207, 207);
+    height: 3.25rem;
+    background-color: transparent;
+}
+
+#form form textarea {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    outline: none;
+    border: 2px solid rgb(207, 207, 207);
+    background-color: transparent;
+    max-height: 100px;
+    max-width: 100%;
+}
+#form h4 {
+   margin-bottom: 10px;
+}
+
+#form form button { 
+    margin-bottom: 10px;
+    background-color: #088178;
+    color: white;
+    width: 100px;
+}
+
+#form .client-details {
+    margin-left: 20px;
+    text-align: center;
+}
+
+#form .client-details img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+#form .team-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#form .member-desc {
+    margin-left: 10px;
+}
+
+
+@media (max-width:799px) {
+    /*  */
+
+    #details {
+        margin: 0;
+        padding: 20px 10px;
+    }
+
+    #details .loc-box {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #details .locdetails {
+        width: 100%;
+    }
+
+    #details .google-map {
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    #form {
+
+        margin: 0;
+        padding: 20px 10px;
+    }
+
+    #newsletter {
+        margin: 0;
+        align-items: start;
+       
+    }
+
+    #newsletter .text {
+        padding: 0 10px;
+    }
+
+    #newsletter .form form {
+        width: 100%;
+    }
+
+    #newsletter .form input {
+        font-size: 24px;
+    }
+}
+
+@media (max-width:477px) {
+    #form .det-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #form .client-details {
+        padding: 20px 10px;
+        margin: 0;
+    }
+}

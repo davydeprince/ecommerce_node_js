@@ -1,0 +1,72 @@
+.about-header {
+    background-image: url("/images/banner/How\ Education\ can\ affect\ Your\ Income.jpeg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 40vh;
+}
+
+#about-header h2, #about-header p {
+    color: whitesmoke;
+}
+
+#about-header h2 {
+    font-weight: 800;
+}
+
+#about {
+    padding: 150px 150px 0 150px;
+}
+
+#about .about-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#about .about-image {
+    width: 50%;
+    margin-right: 30px;
+}
+
+#about img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+#about h1 {
+    font-weight: 800;
+}
+
+#about .about-text {
+    width: 50%;
+    line-height: 20px;
+}
+
+@media (max-width:799px) {
+    #about {
+        margin: 0;
+        padding: 20px 15px;
+    }
+    #about img {
+        height: 500px;
+    }
+
+    @media (max-width:477px) {
+        #about .about-box {
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #about .about-image {
+            width: 100%;
+        }
+
+        #about .about-text {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,122 @@
+#pro-details {
+    display: flex;
+    margin: 20px;
+}
+
+#pro-details .single-pro-image {
+    margin-right: 50px;
+    width: 40%;
+}
+
+.small-image-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-image-coll {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#pro-details .single-pro-details {
+    width: 50%;
+    padding-top: 0px;
+}
+
+#pro-details .single-pro-details h4 {
+    padding: 40px 0px 20px 0px;
+}
+
+#pro-details .single-pro-details h2 {
+    font-size: 22px;
+    
+}
+
+#pro-details .single-pro-details select {
+    border-radius: 4px;
+    padding: 5px 5px;
+    border: 1px solid #088178;
+    border-width: 2px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+#pro-details .single-pro-details input {
+
+    width: 50px;
+    height: 47px;   
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: transparent;
+
+}
+
+#pro-details .single-pro-details input:focus {
+    outline: none;
+}
+
+#pro-details .single-pro-details button {
+    background-color: #088178;
+    color: white;
+}
+
+#pro-details .single-pro-details h3 {
+    padding: 30px 0 0 0;
+}
+
+#pro-details .single-pro-details span {
+    line-height: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 799px) {
+    #pro-details {
+        margin: 0px;
+        padding: 0 20px;
+    }
+
+    #pro-details .single-pro-details {
+        padding: 0px 20px;
+    }
+
+    #pro-details .single-pro-image {
+        width: 50%;
+        margin-right: 0;
+    }
+
+    .single-pro-details h6 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 477px) {
+    
+    #pro-details {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    #pro-details .single-pro-image {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #pro-details .single-pro-details {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    #newsletter {
+       
+        padding: 10px;
+        margin: 0;
+    }
+
+    .section-p1 {
+        margin: 0;
+        padding: 20px 10px 20px 10px;
+    }
+}

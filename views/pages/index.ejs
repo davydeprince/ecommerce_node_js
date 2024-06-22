@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phonepalace</title>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <div class="container">
+
+    <section class="header" id="header">
+        <a href="#"><h4 class="logo">Phone Palace</h4></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="phonepalace/home">Home</a></li>
+                <li><a href="/phonepalace/shop">Shop</a></li>
+                <li><a href="/phonepalace/blog">Blog</a></li>
+                <li><a href="/phonepalace/about">About</a></li>
+                <li><a href="/phonepalace/contact">Contact</a></li>
+                <li id="lg-bag"><a href="/phonepalace/cart"><i class="fa fa-shopping-bag"></i></a></li>
+                <a href="#"><i class="fa fa-times" id="close"></i></a>
+
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-shopping-bag"></i></a>
+            <i class="fa fa-outdent" id="bar"></i>
+        </div>
+    </section>
+
+    <section id="hero">
+        <h4>Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons $ up to 70% off!</p>
+        <button>Shop Now</button>
+    </section>
+
+    <section id="features" class="section-p1">
+        <div class="fe-box">
+           <img src="/images/features/feature1.png" alt="shipping">
+           <h6>Free Shipping</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="/images/features/feature2.png" alt="shipping">
+            <h6>Online Order</h6>
+         </div>
+
+         <div class="fe-box">
+            <img src="/images/features/feature3.png" alt="shipping">
+            <h6>Save Money</h6>
+         </div>
+
+         <div class="fe-box">
+            <img src="/images/features/feature4.png" alt="shipping">
+            <h6>Promotions</h6>
+         </div>
+
+         <div class="fe-box">
+            <img src="/images/features/feature5.png" alt="shipping">
+            <h6>Happy Sell</h6>
+         </div>
+
+    </section>
+
+    <!-- Product section -->
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>New Mordern Tech Design</p>
+        <div class="pro-container">
+            
+            <% results.forEach(function(products) { %>
+                <!-- Content -->
+           <div class="pro">
+            <a href="/phonepalace/product/<%= products.id %>"><img src=" <%= products.picture %> " alt=" <%= products.name%>"></a>
+            
+            <div class="des">
+                <span><%= products.type %></span>
+                <h5><%= products.name %></h5>
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h4>Ksh <%= products.price %></h4>
+            </div>
+            <div class="cart">
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+           </div>
+           <% }); %>
+        
+        </div>
+    </section>
+
+    <section id="banner" class="section-m1">
+     <h4>Repair Services</h4>
+     <h2>Up to <span>70% Off </span> - All smartphones & Accessories</h2>
+
+     <button class="normal">Explore More</button>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Check New Arrivals </h2>
+        <p> New Mordern Tech Design</p>
+        <div class="pro-container">
+
+           <div class="pro">
+            <img src="/images/andrey-matveev-Q8My8QEsvY8-unsplash-removebg-preview.png" alt="">
+            <div class="des">
+                <span>Tecno</span>
+                <h5>Tecno Spark-20 Grey</h5>
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h4>Price</h4>
+            </div>
+            <div class="cart">
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+           </div>
+           <div class="pro">
+            <img src="/images/andrey-matveev-JctZNX_Jz-k-unsplash.jpg" alt="">
+            <div class="des">
+                <span>Infinix</span>
+                <h5>Infinix Hot-10 Light</h5>
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h4>Price</h4>
+            </div>
+            <div class="cart">
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+           </div>
+
+           <div class="pro">
+            <img src="/images/anh-nhat-PdALQmfEqvE-unsplash.jpg" alt="">
+            <div class="des">
+                <span>Nokia</span>
+                <h5>Nokia C30-2019</h5>
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h4>Price</h4>
+            </div>
+            <div class="cart">
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+           </div>
+
+           <div class="pro">
+            <img src="/images/anh-nhat-yqcloMb3Abw-unsplash.jpg" alt="">
+            <div class="des">
+                <span>Nokia</span>
+                <h5>Nokia C30-2019</h5>
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h4>Price</h4>
+            </div>
+            <div class="cart">
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+           </div>
+
+           <div class="pro">
+            <img src="/images/andrey-matveev-R4GxyC8SgH4-unsplash.jpg" alt="">
+            <div class="des">
+                <span>Tecno</span>
+                <h5>Tecno Spark-10-Navy-blue</h5>
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h4>Price</h4>
+            </div>
+            <div class="cart">
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+           </div>
+
+           <div class="pro">
+            <img src="/images//andrey-matveev-Qeu_m2j-T-g-unsplash.jpg" alt="">
+            <div class="des">
+                <span>Tecno</span>
+                <h5>Tecno Spark-19-colorful</h5>
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h4>Price</h4>
+            </div>
+            <div class="cart">
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+           </div>
+
+           <div class="pro">
+            <img src="/images/hi-res-removebg-preview.png" alt="">
+            <div class="des">
+                <span>Alamy</span>
+                <h5>Alamy</h5>
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h4>Price</h4>
+            </div>
+            <div class="cart">
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+           </div>
+
+
+           <div class="pro">
+            <img src="/images/hero.png" alt="">
+            <div class="des">
+                <span>Iphone</span>
+                <h5>Iphone-20-pro-max</h5>
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h4>Price</h4>
+            </div>
+            <div class="cart">
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+           </div>
+        </div>
+    </section>
+
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4>Crazy deals</h4>
+            <h2>buy 1 get 1 flash-drive</h2>
+            <span>The best classic dress is on sale at cara</span>
+            <button class="white">Learn More</button>
+        </div>
+
+        <div class="banner-box banner-box2">
+            <h4>Choose your best</h4>
+            <h2>for all budgets</h2>
+            <span>The best classic Smart-Phones</span>
+            <button class="white">Accessories</button>
+        </div>
+    </section>
+
+
+    <section id="banner3">
+        <div class="banner-box">
+            <h2>Seasonal Sale</h2>
+            <h3>New in the market -50% OFF</h3>
+        </div>
+
+        <div class="banner-box banner-box2">
+            <h2>Seasonal Sale</h2>
+            <h3>New in the market -50% OFF</h3>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="text">
+          <h2>Sign Up for News Letters</h2>
+          <h4>Get email updates about our latest shop <span>a special offers.</span></h4>
+        </div>
+
+        <div class="form">
+            <form action="" method="">
+                <input type="email" id="email" placeholder="Email" required>
+                <button class="normal">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> phonepalace@gmail.com</p>
+            <p><strong>Phone:</strong> +254 0769809073</p>
+            <p><strong>Hours:</strong> 0800Hrs-2000Hrs Mon to Sat</p>
+
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-whatsapp"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+         <h4>About</h4>
+         <a href="#">About</a>
+         <a href="#">Delivery Info</a>
+         <a href="#">Privacy Policy</a>
+         <a href="#">Ters & Conditions</a>
+         <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Orders</a>
+            <a href="#">Help</a>
+           </div>
+
+           <div class="col payments">
+            <a href=""><img src="" alt="M-pesa"></a>
+           </div>
+
+           <div class="copywrite">
+            <p>@copywrite 2024, phone palace Ecommerce Website</p>
+           </div>
+    </footer>
+
+</div>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
